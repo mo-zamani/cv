@@ -1,52 +1,36 @@
 # Professional CV
 
-A modern, professional CV template created in LaTeX. This template features a clean, elegant design with proper typography and spacing.
+This repository contains my professional CV, built using LaTeX. The CV is automatically built and deployed to GitHub Pages whenever changes are pushed to the main branch.
 
 ## Features
 
-- Clean and professional layout
-- Modern typography using Charter font
-- Color-coded sections for better readability
-- Responsive design that works well in both digital and print formats
-- Easy to customize and maintain
-- Includes FontAwesome icons for contact information
-- Hyperlinked contact information
+- Professional LaTeX-based CV
+- Automatic PDF generation using GitHub Actions
+- Hosted on GitHub Pages for easy access
+- Mobile-friendly download page
+- Automatic updates tracking
 
-## Requirements
+## Accessing the CV
 
-- LaTeX distribution (TeX Live, MiKTeX, or MacTeX)
-- FontAwesome package
-- Charter font package
-- NewTX Math font package
+You can access and download my CV in the following ways:
 
-## Usage
+1. Visit the GitHub Pages site: [mo-zamani.github.io/cv](https://mo-zamani.github.io/cv)
+2. Download the latest PDF directly from the repository
+3. Clone the repository and compile the LaTeX source yourself
 
-1. Clone this repository:
+## Building Locally
+
+To build the CV locally, you'll need a LaTeX distribution installed on your system. Then:
+
 ```bash
-git clone https://github.com/yourusername/cv.git
+pdflatex academic-cv.tex
+pdflatex academic-cv.tex  # Run twice to resolve references
 ```
-
-2. Compile the CV:
-```bash
-pdflatex CV.tex
-```
-
-3. Customize the content in `CV.tex` to match your information
-
-## Customization
-
-The template is highly customizable. You can modify:
-
-- Colors in the preamble section
-- Section spacing
-- Font sizes
-- Layout parameters
-- Contact information format
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This CV is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
+## Contact
 
-Feel free to submit issues and enhancement requests! 
+For any questions or inquiries, please feel free to reach out through my GitHub profile or other contact methods listed in the CV. 
