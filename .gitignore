@@ -1,26 +1,42 @@
-# LaTeX
+# LaTeX build artifacts
 *.aux
-*.bbl
-*.blg
 *.log
 *.out
 *.toc
-*.pdf
-*.synctex.gz
+*.bbl
+*.blg
 *.fls
 *.fdb_latexmk
+*.synctex.gz
+*.pdfsync
 
 # System files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 Thumbs.db
-*.swp
-*~
+ehthumbs.db
 
-# IDE specific
+# Editor files
+*.swp
+*.swo
+*~
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
 # Website directory
-mo-zamani.github.io/ 
+mo-zamani.github.io/
+
+# GitHub Pages
+/docs/academic-cv.pdf
+
+# Backup files
+*.backup
+*.bak
+
+# Temporary files
+*.tmp

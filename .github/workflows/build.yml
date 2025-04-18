@@ -1,0 +1,36 @@
+name: Build and Deploy CV
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up TeX Live
+        uses: xu-cheng/texlive-action@v2
+        with:
+          texlive_version: 'latest'
+          working_directory: '.'
+          
+      - name: Compile LaTeX document
+        run: |
+          pdflatex cv.tex
+          pdflatex cv.tex
+          
+      - name: Prepare docs directory
+        run: |
+          mkdir -p docs
+          cp cv.pdf docs/
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          commit_message: "Update CV: ${{ github.event.head_commit.message }}" 
