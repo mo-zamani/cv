@@ -9,6 +9,8 @@ This repository contains my professional CV, built using LaTeX. The CV is automa
 - Hosted on GitHub Pages for easy access
 - Mobile-friendly download page
 - Automatic updates tracking
+- Clean and modern design
+- Responsive layout
 
 ## Accessing the CV
 
@@ -27,10 +29,29 @@ pdflatex cv.tex
 pdflatex cv.tex  # Run twice to resolve references
 ```
 
+## Project Structure
+
+```
+cv/
+├── cv.tex           # Main LaTeX source file
+├── academic-cv.pdf  # Generated PDF
+├── docs/            # Documentation and assets
+└── .github/         # GitHub Actions workflows
+```
+
+## Contributing
+
+Feel free to:
+- Fork this repository
+- Create feature branches
+- Submit pull requests
+- Report issues
+
 ## License
 
 This CV is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions or inquiries, please feel free to reach out through my GitHub profile or other contact methods listed in the CV. 
+- GitHub: [mo-zamani](https://github.com/mo-zamani)
+- For any questions or inquiries, please feel free to reach out through my GitHub profile or other contact methods listed in the CV. 
