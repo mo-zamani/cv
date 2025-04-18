@@ -19,13 +19,13 @@ jobs:
           
       - name: Compile LaTeX document
         run: |
-          pdflatex academic-cv.tex
-          pdflatex academic-cv.tex
+          pdflatex cv.tex
+          pdflatex cv.tex
           
       - name: Prepare docs directory
         run: |
           mkdir -p docs
-          cp academic-cv.pdf docs/
+          cp cv.pdf docs/
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

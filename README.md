@@ -23,8 +23,8 @@ You can access and download my CV in the following ways:
 To build the CV locally, you'll need a LaTeX distribution installed on your system. Then:
 
 ```bash
-pdflatex academic-cv.tex
-pdflatex academic-cv.tex  # Run twice to resolve references
+pdflatex cv.tex
+pdflatex cv.tex  # Run twice to resolve references
 ```
 
 ## License
